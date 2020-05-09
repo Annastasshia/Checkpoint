@@ -1,58 +1,93 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Foundation CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-   
-    <!-- jQuery and javaScript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    <!-- Compressed JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="style.css"> 
-    <title>Checkpoint Search</title>
-  </head>
-  <body>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Foundation CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+  <!-- jQuery and javaScript -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- Compressed JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+  <!--Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="./resources/images/favicon.ico" />
+  <title>Checkpoint Search</title>
+</head>
+
+<body>
+
+  <div class="holy-grail-grid">
+    <div class="holy-grail-header"><img src="./resources/images/title-image.png" width="400" height="100"
+        class="d-inline-block align-top" alt="game controller">
+      <!-- <h3>Checkpoint Video Game Search</h3> -->
+    </div>
     
-    <div class="holy-grail-grid">
-        <div class="holy-grail-header">
-          <h3>Checkpoint Video Game Search</h3>
-        </div>
-      
-        <div class="holy-grail-middle" >
-          <div class="input-group input-group-rounded">
-            <input class="input-group-field" id="titleInput" type="text">
-            <div class="input-group-button">
-              <input type="submit" class="button secondary" value="Search">
+
+    <div class="holy-grail-middle">
+      <div class="columns medium-12">
+      <div class="input-group input-group-rounded">
+        <input class="input-group-field" id="titleInput" type="text">
+        <div class="input-group-button">
+          <input type="submit" class="button" value="Search">
+        </div> <br /></div>
+        <div class="gameSearchInput">
+
+          <!--Card make-->
+
+          <div class="work-feature-block row">
+            <div class="columns medium-3">
+              <img class="work-feature-block-image" src="https://placehold.it/150x300"/>
             </div>
-            <div class="gameSearchInput">
-              
+            <div class="columns medium-9">
+              <h3>Game Title</h3>
+              <h5>Game Platforms</h5>
+              <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ul>
             </div>
-          </div>          
-         
+          </div>
+          
+          
+
         </div>
-      
-        <div class="holy-grail-right">
-          <h3>Top Video Games</h3>
-          <ul>
-            <li><a href="#">Top RPG</a></li>
-            <li><a href="#">Top FPS</a></li>
-            <li><a href="#">Top Mobile</a></li>
-          </ul>
-        </div>
-      
-        <div class="holy-grail-footer">
-          <h3>API by Chicken Coop</h3>
-        </div>
-      
       </div>
-      
-   
-    <!-- <div class="grid-container">
+
+    </div>
+
+    <div class="holy-grail-right">
+
+      <h5 style="text-align: center;">Top Video Games</h5>
+      <ul>
+        <li><a href="#">Top RPG</a></li>
+        <li><a href="#">Top FPS</a></li>
+        <li><a href="#">Top Mobile</a></li>
+      </ul>
+    </div>
+
+    <div class="holy-grail-footer">
+      <h6>Data provided by Chicken Coop</h6>
+    </div>
+
+  </div>
+
+
+  <!-- <div class="grid-container">
    
       <div class="input-group input-group-rounded">
         <input class="input-group-field" type="search">
@@ -62,14 +97,15 @@
         <div class="gameSearchInput"></div>
       </div>          
     </div> -->
-    <!-- anna did do anything -->
-    <!-- SEARCH TERM CARD -->
-    <!-- create an input field for search term -->
-    
-    <!-- #display-field CARD : with dynamically generated elements-->
-    <!-- static footer -->
-     
+  <!-- anna did do anything -->
+  <!-- SEARCH TERM CARD -->
+  <!-- create an input field for search term -->
 
-   <script src="./script.js"></script>
-  </body>
+  <!-- #display-field CARD : with dynamically generated elements-->
+  <!-- static footer -->
+
+
+  <script src="./script.js"></script>
+</body>
+
 </html>

@@ -1,3 +1,22 @@
+* {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+}
+
+h5, h3 {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 3px;
+}
+
+h6 {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 4px;
+}
+
+.button{
+  background-color: #333333; 
+}
+
 .input-group-rounded .input-group-field {
     border-radius: 5000px 0 0 5000px;
     padding-left: 1rem;
@@ -9,8 +28,14 @@
   }
   body {
     height: auto;
-  }
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
 
+
+  ul{
+    font-size: 15px;
+  }
   
 .holy-grail-grid {
     display: -ms-grid;
@@ -31,6 +56,7 @@
   }
 
 
+
   .holy-grail-header,
   .holy-grail-middle,
   .holy-grail-right,
@@ -47,6 +73,8 @@
     -ms-grid-row: 1;
         grid-row-start: 1;
         text-align: center;
+        background-color: #333333; 
+        color: white;
   }
   
   
@@ -78,8 +106,23 @@
         grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
+    background-color: #333333; 
+        color: #5e5d5d;
   }
   
+.work-feature-block {
+  padding: 10px 0;
+  border-top: 1px solid #cacaca;
+}
+
+.work-feature-block-image {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  padding-right: 50px;
+  float: left;
+}
+
   
   
   
