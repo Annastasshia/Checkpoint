@@ -3,9 +3,17 @@
   letter-spacing: 2px;
 }
 
+
+.gameImg {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 h5, h3 {
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 3px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 h6 {
