@@ -23,6 +23,7 @@ h5, h3 {
 h6 {
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 4px;
+  padding: 2px;
 }
 
 
@@ -111,8 +112,11 @@ h6 {
       -ms-grid-column: 1;
           grid-column-start: 1;
       grid-column-end: 4;
+      display: flex;
+      justify-content: center;
     }
   }
+
   
   .holy-grail-footer {
     -ms-grid-column: 1;

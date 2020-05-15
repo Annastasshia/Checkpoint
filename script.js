@@ -97,10 +97,10 @@ $(document).ready(function(){
         
         for (let i = 0; i < response2.games.length; i ++){
             var game = response2.games[i];
-            var gameName = $("<a>").text("Game Title: " + game.game_name).attr("href", game.game_url).attr("target", "_blank");
+            var gameName = $("<a>").text(game.game_name).attr("href", game.game_url).attr("target", "_blank");
             var playScore = $("<p>").text("Player Rating: " + game.playscore);
 
-            rightDiv.append(gameName );
+            rightDiv.append(gameName);
             rightDiv.append(playScore);
         }
     });
