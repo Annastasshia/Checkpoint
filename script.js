@@ -10,6 +10,7 @@ $(document).ready(function(){
         event.preventDefault();
 
         var title = $("#titleInput").val().trim().replace(/ /g,"-");
+        
 
         console.log(title);
 
@@ -29,13 +30,14 @@ $(document).ready(function(){
 
             var mainDiv = $(".main-div");
             gameDiv = $("<div>").addClass("columns medium-9");
-            detailsDiv = $("<div>").addClass("columns medium-12");
+            detailsDiv = $("<div>").addClass("columns medium-12 border");
             
             var titleH3 = $("<h3>").text(response.name);
             var platH5 = $("<h5>").text("Game Platforms:");
             var rating = $("<h5>").text("ESRB Rating: "+ response.esrb_rating.name);
-            var details =$("<p>").text("Details: " + response.description_raw);
-            var gameImg = $("<img>").attr('src', response.background_image).addClass("columns medium-3 gameImg");
+            var detailsH5 = $("<h5>").text("Details:");
+            var details =$("<p>").text(response.description_raw);
+            var gameImg = $("<img>").attr('src', response.background_image).addClass("columns medium-3");
             gameImg.addClass("work-feature-block-image");
             var platUl = $("<ul>");
 
@@ -43,12 +45,27 @@ $(document).ready(function(){
         
             mainDiv.prepend(detailsDiv);
             detailsDiv.prepend(details);
+            gameDiv.prepend(detailsH5)
             mainDiv.prepend(gameDiv);
             mainDiv.prepend(gameImg);
             gameDiv.prepend(rating);
             gameDiv.prepend(platUl);
             gameDiv.prepend(platH5);
             gameDiv.prepend(titleH3);
+
+            if (response.esrb_rating.name === "Teen"){
+                $(rating).addClass("teen-rating");
+
+            }
+
+            else if (response.esrb_rating.name === "Mature"){
+                $(rating).addClass("mature-rating");
+            }
+
+            else if (response.esrb_rating.name === "Everyone"){
+                $(rating).addClass("everyone-rating");
+            }
+
         
 
 
@@ -90,8 +107,10 @@ $(document).ready(function(){
 
     $.ajax(settings2).done(function (response2) {
         console.log(response2);
-
         var rightDiv = $(".platform-pull")
+        $(rightDiv).empty();
+
+        
 
         
         
