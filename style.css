@@ -4,20 +4,32 @@
 }
 
 .border{
-  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
 
 }
 
-.gameImg {
-  overflow: hidden;
-  white-space: nowrap;
+.teen-rating{
+  color: #d4ca39;
 }
+
+.mature-rating{
+  color: rgb(189, 15, 15);
+}
+
+.everyone-rating{
+  color: #206420;
+}
+
+
 
 h5, h3 {
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 3px;
-  overflow: hidden;
-  white-space: nowrap;
+
+}
+
+p {
+  font-size: medium;
 }
 
 h6 {
