@@ -2,6 +2,8 @@
 Video game search engine utilizing APIs. Search for your favorite games and display information including platforms, ESRB rating and
 detailed discription.
 
+View Site Demo: https://youtu.be/-RUTDsvoXmw
+
 # Getting Started
 
 N/A
