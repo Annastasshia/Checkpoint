@@ -6,33 +6,30 @@ $(document).ready(function(){
   
 
     // RAWG API
-    $("#searchbtn").on("click", function(event){
+    $("#jokebtn").on("click", function(event){
         event.preventDefault();
-
-        var title = $("#titleInput").val().trim().replace(/ /g,"-");
-        
-
-        console.log(title);
-
-        var settings = {
+        console.log(" you clicked me");
+        const settings = {
             "async": true,
             "crossDomain": true,
-            "url": "https://rawg-video-games-database.p.rapidapi.com/games/"+title,
+            "url": "https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random",
             "method": "GET",
             "headers": {
-                "x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
-                "x-rapidapi-key": "56967c5012mshefae2d0c353bc84p1b80c2jsnad5515b32ae3"
+                "accept": "application/json",
+                "X-RapidAPI-Key": "56967c5012mshefae2d0c353bc84p1b80c2jsnad5515b32ae3",
+                "X-RapidAPI-Host": "matchilling-chuck-norris-jokes-v1.p.rapidapi.com"
             }
-        }
+        };
+       
         
         $.ajax(settings).done(function (response) {
-            console.log(response);
+            console.log(response.value);
 
             var mainDiv = $(".main-div");
             gameDiv = $("<div>").addClass("columns medium-9");
             detailsDiv = $("<div>").addClass("columns medium-12 border");
             
-            var titleH3 = $("<h3>").text(response.name);
+            var titleH3 = $("<h3>").text(response);
             var platH5 = $("<h5>").text("Game Platforms:");
             var rating = $("<h5>").text("ESRB Rating: "+ response.esrb_rating.name);
             var detailsH5 = $("<h5>").text("Details:");
